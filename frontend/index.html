@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Distribution Order</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <h1>Place Your Order</h1>
+    <form id="orderForm" action="https://API_ID.execute-api.us-east-2.amazonaws.com/prod/orders" method="POST">
+        <label for="customerId">Customer ID:</label>
+        <input type="text" id="customerId" name="customerId" required><br>
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required><br>
+        <label for="deliverySlot">Delivery Slot:</label>
+        <input type="text" id="deliverySlot" name="deliverySlot" placeholder="e.g., 10 AM"><br>
+        <label for="instructions">Instructions:</label>
+        <input type="text" id="instructions" name="instructions" placeholder="e.g., Leave at door"><br>
+        <button type="submit">Submit Order</button>
+    </form>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
